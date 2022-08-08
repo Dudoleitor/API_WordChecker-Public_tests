@@ -13,6 +13,6 @@ This repo contains input files generated using the _input_gen.py_ script provide
 I hope this files help the students who need to troubleshoot their solution.
 
 ### Disclaimer
-Although my solutions successfully passed each test available in the valutation software, I cannot gurantee that is code bug-free.
+Although my solution successfully passed each test available in the valutation software, I cannot gurantee that the code is bug-free.
 
 In order to avoid copyright issues, the script _input_gen.py_ is not uploaded here; students with their credentials can download the file through the website of the valutation software.

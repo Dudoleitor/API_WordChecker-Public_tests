@@ -20,20 +20,20 @@ gcc -Werror -Wall -Wmaybe-uninitialized -Wuninitialized -pedantic
 ### To use valgrind memory checker
 ```
 gcc -Werror -Wall -Wmaybe-uninitialized -Wuninitialized -pedantic -g3 file.c
-valgrind --leak-check=full --track-origins=yes --show-leak-kinds=all ./a.out **< /path/to/input/file** > output.txt
+valgrind --leak-check=full --track-origins=yes --show-leak-kinds=all ./a.out < /path/to/input/file > output.txt
 ```
 
 ### To use kcachegrind
 ```
 gcc -Werror -Wall -Wmaybe-uninitialized -Wuninitialized -pedantic -g3 file.c
-valgrind --tool=callgrind ./a.out **< /path/to/input/file** > output.txt
+valgrind --tool=callgrind ./a.out < /path/to/input/file > output.txt
 kcachegrind callgrind.out.XXXXX
 ```
 
 ### To use the address sanitizer
 ```
 gcc -Werror -Wall -Wmaybe-uninitialized -Wuninitialized -pedantic -g3 -fsanitize=address -lasan file.c
-./a.out **< /path/to/input/file** > output.txt
+./a.out < /path/to/input/file > output.txt
 ```
 
 ## Disclaimer

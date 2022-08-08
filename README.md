@@ -14,19 +14,27 @@ I hope this files help the students who need to troubleshoot their solution.
 
 ## Useful commands
 ### Flags for gcc to avoid stupid mistakes
--Werror -Wall -Wmaybe-uninitialized -Wuninitialized -pedantic 
+```
+gcc -Werror -Wall -Wmaybe-uninitialized -Wuninitialized -pedantic 
+```
 ### To use valgrind memory checker
+```
 gcc -Werror -Wall -Wmaybe-uninitialized -Wuninitialized -pedantic -g3 file.c
 valgrind --leak-check=full --track-origins=yes --show-leak-kinds=all ./a.out **< /path/to/input/file** > output.txt
+```
 
 ### To use kcachegrind
+```
 gcc -Werror -Wall -Wmaybe-uninitialized -Wuninitialized -pedantic -g3 file.c
 valgrind --tool=callgrind ./a.out **< /path/to/input/file** > output.txt
 kcachegrind callgrind.out.XXXXX
+```
 
 ### To use the address sanitizer
+```
 gcc -Werror -Wall -Wmaybe-uninitialized -Wuninitialized -pedantic -g3 -fsanitize=address -lasan file.c
 ./a.out **< /path/to/input/file** > output.txt
+```
 
 ## Disclaimer
 Although my solution successfully passed each test available in the valutation software, I cannot gurantee that the code is bug-free.

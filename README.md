@@ -8,9 +8,14 @@ AY: 2021-2022
 
 Project title: Word checker
 
+## Alternative download link
+https://polimi365-my.sharepoint.com/:u:/g/personal/10730627_polimi_it/ETlFMtwbiABAhagIIFR4v5QB7DLZN5fqYpZoXtfgR4WAsQ
+
+Due to quota limitations set by GitHub, it's possibile that large files stored on LFS will become unavailable. I've uploaded the whole repo on OneDrive, students from polimi can access the .zip file using their Microsoft account.
+
 ## Repo purpose
 This repo contains input files generated using the _input_gen.py_ script provided by the professor and, for each input file, the corresponding output returned by my script.
-I hope this files help the students who need to troubleshoot their solution.
+I hope these files help the students who need to troubleshoot their solution.
 
 ## Useful commands
 ### Flags for gcc to avoid stupid mistakes
